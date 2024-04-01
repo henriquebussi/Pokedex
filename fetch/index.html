@@ -7,18 +7,28 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <input type="text" id="PokemonName" placeholder="Insira um Pokemon" >
-    <button onclick="fetchData()">Fetch</button>
+    <div class="upperbody">
+        <div class="uperuperbody">
+            <div class="pokemoninput">
+            <input type="text" id="PokemonName" placeholder="Insira um Pokemon" >
+            <button onclick="fetchData()">Fetch</button></div>
+            <p>Pokedex feita por mim</p>
+
+</div>
 
     <div class="PokemonName">
     <div id="PokemonUsername"></div>
 </div>
 <div id="pokemonumber"></div>
+</div>
+
 <div class="PokemonImg">
     <img src="" alt="Pokemon Image" id="PokemonImg" style="display: none">
 </div>
+<div class="styletypes">
 <div id="tipo1" class="types"></div>
 <div id="tipo2" class="types"></div>
+</div>
     
 </body>
 <script src="index.js"></script>

@@ -4,12 +4,13 @@ async function fetchData() {
         const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`);
 
         if (!response.ok) {
-            throw new Error("Pokemon not found!");
+            throw new Error("Pokemon não foi achado");
         }
 
         const data = await response.json();
         const pokemonImg = document.getElementById("PokemonImg");
         const pokemonSprite = data.sprites.front_default;
+        console.log(data);
 
         pokemonImg.src = pokemonSprite;
         pokemonImg.style.display = "flex";
@@ -76,22 +77,22 @@ async function fetchData() {
                     typeElement.style.color = "#EA447E"
                     break;
                 case "ice":
-                    types.style.color = "#6CD2F5"
+                    typeElement.style.color = "#6CD2F5"
                     break;
                 case "ghost":
-                    types.style.color = "#5C5CB0"
+                    typeElement.style.color = "#5C5CB0"
                     break;
                 case "steel":
-                    types.style.color = "#B6B4C2"
+                    typeElement.style.color = "#B6B4C2"
                     break;
                 case "dragon":
-                    types.style.color = "#705BD9"
+                    typeElement.style.color = "#705BD9"
                     break;
                 case "dark":
-                    types.style.color = "#4D382A"
+                    typeElement.style.color = "#4D382A"
                     break;
                 case "fairy":
-                    types.style.color = "#F6AFF3"
+                    typeElement.style.color = "#F6AFF3"
                     break;
 
                 default:
@@ -104,6 +105,7 @@ async function fetchData() {
     } catch (error) {
         console.error(error);
     }
+
 }
 
 

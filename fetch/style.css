@@ -29,7 +29,30 @@
     
 }
 
-#tipo1{
-    background-color: ;
+#tipo1, #tipo2{
+    background-color: rgb(232, 232, 232);
+    width: 100px;
+    border: 1px black solid;
+    border-radius: 2px;
+    text-align: center;
 }
 
+.styletypes{
+    display: flex;
+    justify-content: center;
+    background-color: gray;
+}
+
+.uperuperbody{
+    display: flex;
+    justify-content: space-between;
+}
+.uperuperbody > p{
+    font-style: italic;
+    color: rgb(20, 20, 20);
+
+}
+
+.upperbody{
+    background-color: lightgray;
+}
